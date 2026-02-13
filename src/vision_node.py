@@ -171,9 +171,8 @@ class VisionNode:
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
-    parser.add_argument("--broker", type=str, default=DEFAULT_BROKER, help="MQTT Broker Address")
-    parser.add_argument("--name", type=str, default="andrew", help="Target name to lock onto")
+    parser.add_argument("--name", type=str, default="Hatuma", help="Target name to lock onto")
     args = parser.parse_args()
 
-    node = VisionNode(args.broker, PORT, args.name)
+    node = VisionNode(DEFAULT_BROKER, PORT, args.name)
     node.run()
