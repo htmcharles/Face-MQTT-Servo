@@ -1,6 +1,6 @@
-# S.A.R.A. Vision Control System
+# Vision Control System
 
-S.A.R.A. (Smart Autonomous Robotic Assistant) is a real-time face tracking and recognition system designed for distributed robotic control. It uses arcface for identity verification and MediaPipe for facial expression and movement detection.
+A real-time face tracking and recognition system designed for distributed robotic control. It uses arcface for identity verification and MediaPipe for facial expression and movement detection.
 
 ## System Overview
 The system captures video from a local camera, identifies enrolled users, and tracks their facial movements. Movement commands (LEFT, RIGHT, CENTERED) are published via MQTT to a central broker, which then broadcasts them to an ESP8266-controlled servo and a web-based monitoring dashboard.
@@ -23,7 +23,7 @@ node server.js
 ### 2. Vision (PC)
 ```bash
 python -m src.enroll  # First time only to enroll your face
-python src/vision_node.py --name Hatuma
+python src/vision_node.py --name Your_Name
 ```
 
 ### 3. ESP8266 (Arduino)
