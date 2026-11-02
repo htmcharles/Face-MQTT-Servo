@@ -9,3 +9,4 @@ node_modules/
 *.pdf
 dp.txt
 config.bat
+.vscode/tasks.json
